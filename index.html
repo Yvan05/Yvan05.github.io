@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>YL Desarrollador Web</title>
+</head>
+
+<body>
+    <!-- Section header-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>&lt;YL /&gt;</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Home</a></li>
+                            <li hidden=""><a href="#sobremi" onclick="seleccionar(this)">About</a></li>
+                            <li hidden=""><a href="#servicios" onclick="seleccionar(this)">Services</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/yael-linares/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/Yael.LsCz"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+               
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2> Desarrollador Web</h2>
+                <p class="bienvenida">Yael Linares</p>
+                <a href="#portfolio">Portafolio</a>
+            </div>
+               
+        </div>
+    </section>
+
+    <!-- secction about-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/perfil.jpeg" alt="perfil">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2>Hola, Soy <span>Yael Ivan Linares Cruz</span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Soy un desarrollador web con habilidades de comunicacion ,analisis y colaboracion con equipo de trabajo, actualmente me enfoco en investigar y practicar tecnologias para el desarrollo web que me ayuden a seguir adquiriendo conocimientos y habilidades.</p>
+            <p>Busco formarme como desarrollador full stack y aplicar mis conocimientos y habilidades en un trabajo donde pueda seguir mejorando</p>
+            
+            <a target="_blank" href="cv/CV_YaelLC.pdf">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--section Services-->
+    <section  id="servicios" hidden="">
+        <h3 class="titulo-seccion">SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño de paginas web responsivas a cualquier dispositivo incluyendo computadora de sobremesa,tablets y celulares</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación PHP</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño resposive, desarrollo de sitios web y software para automatizar, potenciar y optimizar procesos.</p>
+            </div>
+               <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Administracion y alojamiento web ,mantenimiento y soporte Cpanel</p>
+            </div>
+       
+        </div>
+    </section>
+
+    <!-- Secction skills-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/html5.png" alt="perfil">
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+            
+        </div>
+        <div class="skill">
+             <div class="info">
+                <img class="skill-img" src="img/skills/css3.png" alt="perfil">
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="css"></div>
+            </div>
+            
+        </div>
+       
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/js.png" alt="perfil">
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/sql.png" alt="perfil">
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/php.png" alt="perfil">
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="php"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/csharp.png" alt="perfil">
+                <span class="porcentaje">70%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="csharp"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/bts.png" alt="perfil">
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bts"></div>
+            </div>
+        </div>
+         <div class="skill">
+            <div class="info">
+                <img class="skill-img" src="img/skills/java.png" alt="perfil">
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="java"></div>
+            </div>
+        </div>
+    </div>
+               
+    <!-- secction portfolio-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">PROYECTOS</h3>
+        <div class="fila">
+            <div>
+            <div class="proyecto">
+               
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info ">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+                
+                
+            </div>
+                 <div class="infop ">
+                  
+                  <a href="#" class="btn-enviar"><i class="fa-solid fa-eye"></i> Ver Proyecto</a>
+                  <a href="#" class="btn-enviar"><i class="fa-brands fa-github"></i> Ver Codigo</a>
+                </div>
+            
+                </div>
+            
+            <div>
+            <div class="proyecto">
+               
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info ">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+                
+                
+            </div>
+                 <div class="infop ">
+                  
+                  <a href="#" class="btn-enviar"><i class="fa-solid fa-eye"></i> Ver Proyecto</a>
+                  <a href="#" class="btn-enviar"><i class="fa-brands fa-github"></i> Ver Codigo</a>
+                </div>
+            
+                </div>
+            
+           <div>
+            <div class="proyecto">
+               
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info ">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+                
+                
+            </div>
+                 <div class="infop ">
+                  <a href="#" class="btn-enviar"><i class="fa-solid fa-eye"></i> Ver Proyecto</a>
+                  <a href="#" class="btn-enviar"><i class="fa-brands fa-github"></i> Ver Codigo</a>
+              
+                </div>
+            
+                </div>
+            
+             
+        </div>
+      
+       
+     
+    </section>
+
+    <!--secction contact -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">CONTACTO</h3>
+        <div class="contenedor-form">
+            <form id="form_contact" action="https://formspree.io/f/xrgnyzby" method="POST">
+                <div class="fila mitad">
+                    <input name="name" type="text" placeholder="Name..." class="input-mitad" required>
+                    <input name="email" type="email" placeholder="Email..." class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <input name="title" type="text" placeholder="Title.." class="input-full" required>
+                </div>
+                <div class="fila">
+                    <textarea name="message" cols="30" rows="10" placeholder="Menssage..." class="input-full" required></textarea>
+                    
+                </div>
+
+                <input type="submit" value="Enviar" class="btn-enviar">
+
+               
+            </form>
+            
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>© 2022 Copyright:
+        Yael Linares</p>
+        <div class="redes">
+             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+    </footer>
+     <script src="barra.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="message.js"></script>
+    
+</body>
+
+</html>
