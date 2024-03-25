@@ -1,4 +1,5 @@
 Portafolio realizado con JS para mostrar proyector personales.
+
 JS,HTML,PHP,API,SQL,POO
 
 
