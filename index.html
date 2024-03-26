@@ -2,6 +2,10 @@
 <html lang="es">
 
 <head>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
@@ -20,8 +24,6 @@
                     <nav id="nav" class="">
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Home</a></li>
-                            <li hidden=""><a href="#sobremi" onclick="seleccionar(this)">About</a></li>
-                            <li hidden=""><a href="#servicios" onclick="seleccionar(this)">Services</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">Portfolio</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">Contact</a></li>
                         </ul>
@@ -31,10 +33,13 @@
                     <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-
+                    
 
                     
                 </div>
+                
+                   
+                
                
             </header>
             <div class="presentacion">
@@ -63,46 +68,7 @@
         </div>
     </section>
 
-    <!--section Services-->
-    <section  id="servicios" hidden="">
-        <h3 class="titulo-seccion">SERVICIOS</h3>
-        <div class="fila">
-            <div class="servicio">
-                <span class="icono"> <i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de Sitios Web</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Diseño de paginas web responsivas a cualquier dispositivo incluyendo computadora de sobremesa,tablets y celulares</p>
-            </div>
-            <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
-                <h4>Programación PHP</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Diseño resposive, desarrollo de sitios web y software para automatizar, potenciar y optimizar procesos.</p>
-            </div>
-               <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-database"></i></span>
-                <h4>Alojamiento de Sitios</h4>
-                <hr>
-                <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul>
-                <p>Administracion y alojamiento web ,mantenimiento y soporte Cpanel</p>
-            </div>
-       
-        </div>
-    </section>
+
 
     <!-- Secction skills-->
     <div class="contenedor-skills" id="skills">
@@ -286,18 +252,14 @@
 
     <!-- SECCION FOOTER -->
     <footer>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/yael-linares/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/Yael.LsCz"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
         <p>© 2022 Copyright:
         Yael Linares</p>
-        <div class="redes">
-             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-             <a href="#"><i class="fa-brands fa-facebook"></i></a>
-             <a href="#"><i class="fa-brands fa-github"></i></a>
+    <div>
+            <a style="hover{  color: #09f;}" href="https://www.linkedin.com/in/yael-linares/"><i class="fa-brands fa-linkedin"></i></a>
+            <a  href="https://www.facebook.com/Yael.LsCz"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/Yvan05?tab=repositories"><i class="fa-brands fa-github"></i></a>
         </div>
+        
 
     </footer>
      <script src="barra.js"></script>
